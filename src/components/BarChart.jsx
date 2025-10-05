@@ -39,13 +39,13 @@ const BarChart = ({ isDashboard = false }) => {
           },
         },
       }}
-      keys={["hot dog", "burger", "sandwich", "kebab", "fries", "donut"]}
-      indexBy="country"
+      keys={["độ C"]}
+      indexBy="time"
       margin={{ top: 50, right: 130, bottom: 50, left: 60 }}
       padding={0.3}
       valueScale={{ type: "linear" }}
       indexScale={{ type: "band", round: true }}
-      colors={{ scheme: "nivo" }}
+      colors={(bar) => (bar.id === "độ C" ? "#ff7b00ff" : "#38bcb2")}
       defs={[
         {
           id: "dots",

@@ -6,6 +6,7 @@ import AdminPanelSettingsOutlinedIcon from "@mui/icons-material/AdminPanelSettin
 import LockOpenOutlinedIcon from "@mui/icons-material/LockOpenOutlined";
 import SecurityOutlinedIcon from "@mui/icons-material/SecurityOutlined";
 import Header from "../../components/Header";
+import WindyMap from "../../components/WindyMap";
 
 const Team = () => {
   const theme = useTheme();
@@ -101,6 +102,7 @@ const Team = () => {
         }}
       >
         <DataGrid checkboxSelection rows={mockDataTeam} columns={columns} />
+        {/* <WindyMap /> */}
       </Box>
     </Box>
   );
